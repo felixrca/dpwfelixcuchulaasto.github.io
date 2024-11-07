@@ -1,687 +1,625 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-    <head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- ==============================================
-        Basic Page Needs
-        =============================================== -->
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-        <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+  <title>DPW</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/web.css">
+  <link rel="stylesheet" href="assets/css/felix.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/nueve.css">
+  <link rel="stylesheet" href="assets/css/red.css">
+</head>
 
-        <title>DPW</title>
+<body>
 
-        <meta name="description" content="Business, Consulting, Finance, Insurance, Startup and Technology">
-        <meta name="subject" content="Business, Consulting, Finance, Insurance, Startup and Technology">
-        <meta name="author" content="Codings">
+  <header>
 
-        <!-- ==============================================
-        Favicons
-        =============================================== -->
-        <link rel="shortcut icon" href="./images/favicon.ico">
-        <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-touch-icon-114x114.png">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark  ">
+      <div class="container">
+        <canvas class="neuro"></canvas> <!-- Canvas para el nav -->
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/images/logo.png" alt="DISTUCE">
+          <div>
+            <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Contacto:</span>
+            <span class="fs-5 fw-bold">+51-999 999 999 </span>
+          </div>
+        </a>
+        <!-- <div>
+          <a class="btn btn-link text-light" href=""><i class="fab fa-tiktok"></i></a>
+          <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+        </div> -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-warning" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Proyectos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="semana1.html">semana1</a></li>
+                <li><a class="dropdown-item" href="semana2.html">semana2</a></li>
+                <li><a class="dropdown-item" href="semana3.html">semana3</a></li>
+                <li><a class="dropdown-item" href="semana4.html">semana4</a></li>
+                <li><a class="dropdown-item" href="semana5.html">semana5</a></li>
+                <li><a class="dropdown-item" href="semana6.html">semana6-1</a></li>
+                <li><a class="dropdown-item" href="semana61.html">semana6-2</a></li>
+                <li><a class="dropdown-item" href="semana7.html">semana7</a></li>
+                <li><a class="dropdown-item" href="semana8.html">semana8</a></li>
+                <li><a class="dropdown-item" href="semana9.html">semana9</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-        <!-- ==============================================
-        Vendor Stylesheet
-        =============================================== -->
-        <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
-        <link rel="stylesheet" href="./css/vendor/slider.min.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/vendor/icons.min.css">
-        <link rel="stylesheet" href="./css/vendor/icons-fa.min.css">
-        <link rel="stylesheet" href="./css/vendor/animation.min.css">
-        <link rel="stylesheet" href="./css/vendor/gallery.min.css">
-        <link rel="stylesheet" href="./css/vendor/cookie-notice.min.css">
+      <style>
+        .fs-5 {
+          text-align: justify;
 
-        <!-- ==============================================
-        Custom Stylesheet
-        =============================================== -->
-        <link rel="stylesheet" href="./css/default.css">
+          line-height: 1.6;
 
-        <!-- ==============================================
-        Theme Color
-        =============================================== -->
-        <meta name="theme-color" content="#21333e">
+          letter-spacing: 0.5px;
+        }
 
-        <!-- ==============================================
-        Theme Settings
-        =============================================== -->
-        <style>
-            :root {
-                --hero-bg-color: #080d10;
-                
-                --section-1-bg-color: #ffffff;
-                --section-2-bg-color: #111117;
-                --section-3-bg-color: #111117;
-                --section-4-bg-color: #ffffff;
-                --section-5-bg-color: #eef4ed;
-                --section-6-bg-color: #111117;
-                --section-7-bg-color: #ffffff;
+        .text-center {
+          text-align: center;
+        }
+      </style>
 
-                --footer-bg-color: #080d10; --footer-bg-image: url('/./images/1.jpg');
-            }
-        </style>
-        
-    </head>
+    </nav>
+  </header>
 
-    <body class="home">
-        
-        <!-- Preloader -->
-        <div id="preloader" data-timeout="500" class="odd preloader counter">
-            <div data-aos="fade-up" data-aos-delay="500" class="row justify-content-center text-center items">
-                <div data-percent="100" class="radial">
-                    <span></span>
+  <main>
+    <section id="section-1">
+
+      <div class="content-slider">
+        <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+        <input type="radio" id="banner2" class="sec-1-input" name="banner">
+        <input type="radio" id="banner3" class="sec-1-input" name="banner">
+        <input type="radio" id="banner4" class="sec-1-input" name="banner">
+        <div class="slider">
+          <div id="top-banner-1" class="banner">
+            <div class="banner-inner-wrapper header-text">
+              <div class="main-caption pt-1 pb-5 ">
+                <h2>Programación de Aplicaciones Web y Móviles</h2>
+                <h1>Diseño y Programación Web</h1>
+                <div class="border-button"><a href="semana1.html">Nuestros Proyectos</a></div>
+              </div>
+              <div class="container ">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="more-info">
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-user"></i>
+                          <h4><span>Representante:</span><br>CUCHULA ASTO Felix Remigio</h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-home"></i>
+                          <h4><span>Lugar:</span><br>Huancayo - ElTambo
+                            <em>N° S/N</em>
+                          </h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-globe"></i>
+                          <h4><span>IESTP</span><br>Andrés Avelino Cáceres Dorregaray</h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <div class="main-button">
+                            <a href="semana1.html">Proyectos</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <div id="top-banner-2" class="banner">
+            <div class="banner-inner-wrapper header-text">
+              <div class="main-caption pt-1 pb-5 ">
+                <h2>Programación de Aplicaciones Web y Móviles</h2>
+                <h1>Diseño y Programación Web</h1>
+                <div class="border-button"><a href="semana1.html">Nuestros Proyectos</a></div>
+              </div>
+              <div class="container ">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="more-info">
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-user"></i>
+                          <h4><span>Representante:</span><br>CUCHULA ASTO Felix Remigio</h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-home"></i>
+                          <h4><span>Lugar:</span><br>Huancayo - ElTambo
+                            <em>N° S/N</em>
+                          </h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-globe"></i>
+                          <h4><span>IESTP</span><br>Andrés Avelino Cáceres Dorregaray</h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <div class="main-button">
+                            <a href="semana1.html">Proyectos</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="top-banner-3" class="banner">
+            <div class="banner-inner-wrapper header-text">
+              <div class="main-caption pt-1 pb-5 ">
+                <h2>Programación de Aplicaciones Web y Móviles</h2>
+                <h1>Diseño y Programación Web</h1>
+                <div class="border-button"><a href="semana1.html">Nuestros Proyectos</a></div>
+              </div>
+              <div class="container ">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="more-info">
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-user"></i>
+                          <h4><span>Representante:</span><br>CUCHULA ASTO Felix Remigio</h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-home"></i>
+                          <h4><span>Lugar:</span><br>Huancayo - ElTambo
+                            <em>N° S/N</em>
+                          </h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-globe"></i>
+                          <h4><span>IESTP</span><br>Andrés Avelino Cáceres Dorregaray</h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <div class="main-button">
+                            <a href="semana1.html">Proyectos</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="top-banner-4" class="banner">
+            <div class="banner-inner-wrapper header-text">
+              <div class="main-caption pt-1 pb-5 ">
+                <h2>Programación de Aplicaciones Web y Móviles</h2>
+                <h1>Diseño y Programación Web</h1>
+                <div class="border-button"><a href="semana1.html">Nuestros Proyectos</a></div>
+              </div>
+              <div class="container ">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="more-info">
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-user"></i>
+                          <h4><span>Representante:</span><br>CUCHULA ASTO Felix Remigio</h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-home"></i>
+                          <h4><span>Lugar:</span><br>Huancayo - ElTambo
+                            <em>N° S/N</em>
+                          </h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <i class="fa fa-globe"></i>
+                          <h4><span>IESTP</span><br>Andrés Avelino Cáceres Dorregaray</h4>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-6">
+                          <div class="main-button">
+                            <a href="semana1.html">Proyectos</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <div class="controls">
+            <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+                class="text">1</span></label>
+            <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+                class="text">2</span></label>
+            <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+                class="text">3</span></label>
+            <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span
+                class="text">4</span></label>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+
+    <div class="visit-country">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-heading">
+              <h2>Compromiso Responsable</h2>
+              <p>Nos comprometemos a entregar obras y servicios de alta calidad, asegurando la plena satisfacción de
+                nuestros clientes. Cumplimos rigurosamente con los estándares aplicables en materia ambiental,
+                seguridad, salud ocupacional y responsabilidad social, garantizando un desempeño responsable y
+                sostenible en cada proyecto.
+              </p>
+            </div>
+          </div>
+          <!-- Columna del video responsivo -->
+          <div class="col-lg-6 pb-5">
+            <div class="video-responsive">
+              <video autoplay loop muted playsinline>
+                <source src="./assets/video/Carrera técnica - Construcción Civil.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+              </video>
+            </div>
+          </div>
         </div>
 
-        <!-- Header -->
-        <header id="header">
-
-            <!-- Top Navbar -->
-            <nav class="navbar navbar-expand top">
-                <div class="container header">
-
-
-                    <!-- Nav holder -->
-                    <div class="ml-auto"></div>
-
-                    <!-- Navbar Items [right] -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fas fa-phone-alt mr-2"></i>+51 917110742</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fas fa-envelope mr-2"></i>76347704@institutocajas.info</a>
-                        </li>
-                    </ul>
-
-                    <!-- Navbar Icons -->
-                    <ul class="navbar-nav icons">
-                        <li class="nav-item social">
-                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="nav-item social">
-                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="nav-item social">
-                            <a href="#" class="nav-link pr-0"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                    </ul>
-
-                </div>
-            </nav>
-
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand navbar-fixed sub">
-                <div class="container header">
-
-                    <!-- Navbar Brand-->
-                    <a class="navbar-brand" href="index.html">
-                        <span class="brand">
-                            <span class="featured">
-                                <span class="first">Felix Remigio</span>
-                            </span>
-                            <span class="last">Cuchula Asto</span>
-                        </span>
-                        
-                        <!-- 
-                            Custom Logo
-                            <img src="./images/logo.svg" alt="NEXGEN">
-                        -->
-                    </a>
-
-                    <!-- Nav holder -->
-                    <div class="ml-auto"></div>
-
-                    <!-- Navbar Items -->
-                    <ul class="navbar-nav items">
-                                               
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link">Proyectos <i class="icon-arrow-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="semana1.html" class="nav-link">Semana 1</a></li>
-                                <li class="nav-item"><a href="semana2.html" class="nav-link">Semana 2</a></li>
-                                <li class="nav-item"><a href="semana3.html" class="nav-link">Semana 3</a></li>
-                                <li class="nav-item"><a href="semana4.html" class="nav-link">Semana 4</a></li>
-                                <li class="nav-item"><a href="semana42.html" class="nav-link">Semana 4_2</a></li>
-                                <li class="nav-item"><a href="semana5.html" class="nav-link">Semana 5</a></li>
-                                <li class="nav-item"><a href="semana6.html" class="nav-link">Semana 6</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Semana 7</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Semana 8</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Semana 9</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Semana 10</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link">Semana 11</a></li>
-                             
-                            </ul>
-                        </li>
-                    </ul>
-                     
-                </div>
-            </nav>
-
-        </header>
-
-        <!-- Hero -->
-        <section id="slider" class="hero p-0 odd">
-            <div class="swiper-container full-slider animation slider-h-100 slider-h-auto">
-                <div class="swiper-wrapper">
-
-                    <!-- Item 1 -->
-                    <div class="swiper-slide slide-center">
-
-                        <!-- Media -->
-                        <img src="./images/4.jpg" alt="Full Image" class="full-image" data-mask="40">
-
-                        <div class="slide-content row">
-                            <div class="col-12 d-flex justify-content-start inner">
-                                <div class="left text-left">
-
-                                    <!-- Content -->
-                                    <h2 data-aos="zoom-in" data-aos-delay="2000" class="title effect-static-text">Aplicaciones Móviles</h2>
-                                    <p data-aos="zoom-in" data-aos-delay="2400" class="description">Innovación en el desarrollo de Aplicaciones Móviles</p>
-
-                                    <!-- Action -->
-                                    <div data-aos="fade-up" data-aos-delay="2800" class="buttons">                           
-                                    </div>
-                                </div>
-                            </div>
+        <div class="row pt-5">
+          <div class="col-lg-8 ">
+            <div class="items">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-5">
+                        <div class="image">
+                          <img src="s8/5.jpg" alt="">
                         </div>
-                    </div>
-  
-                    <div class="swiper-slide slide-center">
+                      </div>
+                      <div class="col-lg-8 col-sm-7">
+                        <div class="right-content">
+                          <h4>HUANCAYO - JUNÍN</h4>
+                          <h3>CONSORCIO TORRE
+                            TORRE
+                          </h3>
+                          <span>2020</span>
+                          <div class="main-button">
+                            <a href="obras.html">Mas Inf.</a>
+                          </div>
+                          <p>“Construcción del reservorio Torre Torre y estacion de bombeo..."</p>
 
-                        <!-- Media -->
-                        <img src="./images/1.jpg" alt="Full Image" class="full-image" data-mask="40">     
-
-                        <div class="slide-content row">
-                            <div class="col-12 d-flex justify-content-start justify-content-md-end inner">
-                                <div class="right text-left">
-
-                                    <!-- Content -->
-                                    <h2 data-aos="zoom-in" data-aos-delay="2000" class="title effect-static-text">Aplicaciones Móviles</h2>
-                                    <p data-aos="zoom-in" data-aos-delay="2400" class="description">Innovación en el desarrollo de Aplicaciones Móviles</p>
-                                    <!-- Action -->
-                                    <div data-aos="fade-up" data-aos-delay="1200" class="buttons">
-                                    
-                                    </div>
-                                </div>
-                            </div>
+                          <div class="text-button"></div>
                         </div>
+                      </div>
                     </div>
-
+                  </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="col-lg-12">
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-5">
+                        <div class="image">
+                          <img src="s8/4.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-sm-7">
+                        <div class="right-content">
+                          <h4>PICHIS PALCAZU</h4>
+                          <h3>CONSORCIO SIBETARI
+                          </h3>
+                          <span>2021</span>
+                          <div class="main-button">
+                            <a href="obras.html">Mas Inf.</a>
+                          </div>
+                          <p>Encauzamiento y defensa ribereña del río Sabetari - cc.nn. Gloriabamba”
+                            proyecto...</p>
+                          <div class="text-button"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="item last-item">
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-5">
+                        <div class="image">
+                          <img src="s8/5.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-8 col-sm-7">
+                        <div class="right-content">
+                          <h4>CHANCHAMAYO - JUNIN </h4>
+                          <h3>CONSORCIO D & S
+                          </h3>
+                          <span>Europe</span>
+                          <div class="main-button">
+                            <a href="obras.html">Mas Inf.</a>
+                          </div>
+                          <p>“ejecución de obra, instalación del sistema de agua potable y construcción de letrinas en
+                            el anexo de Tornameza, distrito de Chanchamayo, provincia de ...</p>
+
+                          <div class="text-button"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col-lg-12">
+                  <ul class="page-numbers">
+                    <li><a href="#"><i class="fa fa-arrow-left"></i></a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="active"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><i class="fa fa-arrow-right"></i></a></li>
+                  </ul>
+                </div> -->
+              </div>
             </div>
-        </section>     
-
-        <!-- Services -->
-        <section id="services" class="section-3 odd offers">
-            <div class="container">
-                <div class="row intro">
-                    <div class="col-12 col-md-9 align-self-center text-center text-md-left">
-                        <span class="pre-title m-auto ml-md-0">Diseño y Programación Web</span>
-                        <h2>Aplicaciones Móviles <span class="featured"><span>2024-II</span></span></h2>
-                        <p>Andrés Avelino Cáceres Dorregaray</p>
-                    </div>
-                    <div class="col-12 col-md-3 align-self-end">
-                        <a href="#" class="btn mx-auto mr-md-0 ml-md-auto outline-button"></a>
-                    </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="side-bar-map">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div id="map">
+                    <iframe <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.7948951667079!2d-75.23739570567062!3d-12.041931280384334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9602cf0a7723%3A0x907f5166c2e2d7f7!2sCantuta%2C%2012006!5e1!3m2!1ses!2spe!4v1729094077813!5m2!1ses!2spe"
+                      width="100%" height="550px" frameborder="0" style="border:0; border-radius: 23px; "
+                      allowfullscreen=""></iframe>
+                  </div>
                 </div>
-                <div class="row justify-content-center items">
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <i class="icon icon-organization"></i>
-                            <h4>Semana1</h4>
-                           
-                            <a href="semana1.html"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <i class="icon icon-briefcase"></i>
-                            <h4>Semana2</h4>
-                           
-                            <a href="semana2.html"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <i class="icon icon-chart"></i>
-                            <h4>Semana3</h4>
-                           
-                            <a href="semana3.html"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <i class="icon icon-chart"></i>
-                            <h4>Semana4</h4>                           
-                            <a href="semana4.html"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <i class="icon icon-chart"></i>
-                            <h4>Semana4_2</h4>                           
-                            <a href="semana42.html"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <i class="icon icon-chart"></i>
-                            <h4>Semana5</h4>                           
-                            <a href="semana5.html"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 item">
-                        <div class="card">
-                            <i class="icon icon-chart"></i>
-                            <h4>Semana6</h4>
-                           
-                            <a href="semana6.html"><i class="btn-icon pulse fas fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                   
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    
-        <!-- Blog -->
-        <section id="blog" class="section-5 carousel showcase">
-            <div class="overflow-holder">
-                <div class="container">
-                    <div class="row intro">
-                        <div class="col-12 col-md-9 align-self-center text-center text-md-left">
-                            <span class="pre-title m-auto m-md-0">Our editorial content</span>
-                            <h2>IESTP <span class="featured"><span>AACD</span></span></h2>
-                            <p></p>
-                        </div>
-                        <div class="col-12 col-md-3 align-self-end">
-                            <a href="#" class="btn mx-auto mr-md-0 ml-md-auto primary-button"></a>
-                        </div>
-                    </div>
-                    <div class="swiper-container mid-slider items" data-perview="3"> 
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="./images/1.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>Andrea Miller</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>2 </a>
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="#">
-                                                <h4>Increasing creativity is possible for everyone</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="./images/2.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Smith</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>9 </a>
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="#">
-                                                <h4>Because market research is part of the business plan</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="./images/3.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>Andrea Miller</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>16 </a>
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="#">
-                                                <h4>Working from home is now a trend</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="./images/4.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Smith</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>23 </a>
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="#">
-                                                <h4>Tips for having a good relationship at work</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="./images/1.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>David Cooper</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>30 </a>
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="#">
-                                                <h4>David Cooper tells about the opening of the new office in Baltimore</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="./images/2.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>Andrea Miller</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>2 </a>
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="#">
-                                                <h4>Increasing creativity is possible for everyone</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="./images/3.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Smith</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>9 </a>
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="#">
-                                                <h4>Because market research is part of the business plan</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="./images/4.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>Andrea Miller</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>16 </a>
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="#">
-                                                <h4>Working from home is now a trend</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="./images/1.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>John Smith</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>23 </a>
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="#">
-                                                <h4>Tips for having a good relationship at work</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide slide-center item">
-                                <div class="row card p-0 text-center">
-                                    <div class="image-over">
-                                        <img src="./images/2.jpg" alt="Lorem ipsum">
-                                    </div>
-                                    <div class="card-footer d-lg-flex align-items-center justify-content-center">
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-user"></i>David Cooper</a>
-                                        <a href="#" class="d-lg-flex align-items-center"><i class="icon-clock"></i>30 </a>
-                                    </div>
-                                    <div class="card-caption col-12 p-0">
-                                        <div class="card-body">
-                                            <a href="#">
-                                                <h4>David Cooper tells about the opening of the new office in Baltimore</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+      <div class="section-heading">
+        <h2>Excelencia en la Construcción</h2>
+        <p>En DISTUCE S.A.C., nos dedicamos a ofrecer un servicio integral en la ejecución y consultoría de obras
+          civiles, asegurando que cada proyecto se realice con los más altos estándares de calidad. Nuestro equipo de
+          expertos trabaja en estrecha colaboración con los clientes para garantizar resultados excepcionales que
+          superen sus expectativas, siempre dentro de los plazos establecidos y con total responsabilidad social.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-5">
+            <div class="column1 column-1">
+              <div class="item111 item-11"></div>
+              <div class="item111 item-22"></div>
+              <div class="item111 item-33"></div>
             </div>
-        </section>
-
-       
-        <!-- Contact -->
-        <section id="contact" class="section-7 form contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-8 pr-md-5 align-self-center text">
-                        <div class="row intro">
-                            <div class="col-12 p-0">
-                                <span class="pre-title m-0">Envia</span>
-                                <h2> <span class="featured"><span>Contacto</span></span></h2>
-                                <p>Enviar un comentario</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 p-0">
-                                <form action="php/form.php" id="nexgen-simple-form" class="nexgen-simple-form">
-                                    <input type="hidden" name="section" value="nexgen_form">
-
-                                    <input type="hidden" name="reCAPTCHA">
-                                    <!-- Remove this field if you want to disable recaptcha -->
-
-                                    <div class="row form-group-margin">
-                                        <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                            <input type="text" name="name" class="form-control field-name" placeholder="Name">
-                                        </div>
-                                        <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                            <input type="email" name="email" class="form-control field-email" placeholder="Email">
-                                        </div>
-                                        <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                            <input type="text" name="phone" class="form-control field-phone" placeholder="Phone">
-                                        </div>
-                                        <div class="col-12 col-md-6 m-0 p-2 input-group">
-                                            <i class="icon-arrow-down mr-3"></i>
-                                            <select name="info" class="form-control field-info">
-                                                <option value="" selected disabled>More Info</option>
-                                                <option>Audit & Assurance</option>
-                                                <option>Financial Advisory</option>
-                                                <option>Analytics and M&A</option>
-                                                <option>Middle Marketing</option>
-                                                <option>Legal Consulting</option>
-                                                <option>Regulatory Risk</option>
-                                                <option>Other</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-12 m-0 p-2 input-group">
-                                            <textarea name="message" class="form-control field-message" placeholder="Message"></textarea>
-                                        </div>
-                                        <div class="col-12 col-12 m-0 p-2 input-group">
-                                            <span class="form-alert"></span>
-                                        </div>
-                                        <div class="col-12 input-group m-0 p-2">
-                                            <a class="btn primary-button">SEND</a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>                        
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="contacts">
-                            <h4>DPW</h4>
-                            <p>Diseño que inspira, programación que transforma.</p>
-                            
-                        </div>
-                    </div>
-                </div>
+            <div class="column1 column-2">
+              <div class="item111 item-11"></div>
+              <div class="item111 item-22"></div>
+              <div class="item111 item-33"></div>
             </div>
-        </section>
-        
-      <!-- Footer -->
-      <footer>
-
-        <!-- Footer [content] -->
-        <section id="footer" class="odd footer offers">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-3 footer-left">
-
-                        <!-- Navbar Brand-->
-                        <a class="navbar-brand" href="/">
-                            <span class="brand">
-                                <span class="featured">
-                                    <span class="first">Andrés Avelino Cáceres Dorregaray</span>
-                                </span>                               
-                            </span>
-                            <br>
-                            
-                          
-                        </a>
-                        <p>Bienvenido<br>DPW</p>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="fas fa-phone-alt mr-2"></i>
-                                    +51 987654321
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="fas fa-envelope mr-2"></i>
-                                    76347704@institutocajas.info
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <i class="fas fa-map-marker-alt mr-2"></i>
-                                    Huancayo - Junín
-                                </a>
-                            </li>
-                          
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-9 p-0 footer-right">
-                        <div class="row items">
-                            <div class="col-12 col-lg-4 item">
-                                <div class="card">
-                                    <h4>PRINCIPAL</h4>
-                                    <a href="index.html"><i class="icon-arrow-right"></i>INICIO</a>                                      
-                             
-                                </div>
-                            </div>
-                      <!--       // ///////////MASSSSSSSSSSSSSSSSS///////////////// -->
-                        </div>
-                    </div>
-                </div>
+            <div class="column1 column-3">
+              <div class="item111 item-11"></div>
+              <div class="item111 item-22"></div>
+              <div class="item111 item-33"></div>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- Copyright -->
-        <section id="copyright" class="p-3 odd copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 p-3 text-center text-lg-left">
-                        <p>Hunacayo - Peru.</p>
-                        <!--
-                            Suggestion: Replace the text above with a description of your website.
-                         -->
-                    </div>
-                    <div class="col-12 col-md-6 p-3 text-center text-lg-right">
-                        <p>© 2024 <a href="https://themeforest.net/user/codingsdev" target="_blank">Codings</a>.</p>
-                    </div>
-                </div>
+        <div class="col-md-6">
+          <div class="mb-5">
+            <div class="column1 column-1">
+              <div class="item111 item-11"></div>
+              <div class="item111 item-22"></div>
+              <div class="item111 item-33"></div>
             </div>
-        </section>
+            <div class="column1 column-2">
+              <div class="item111 item-11"></div>
+              <div class="item111 item-22"></div>
+              <div class="item111 item-33"></div>
+            </div>
+            <div class="column1 column-3">
+              <div class="item111 item-11"></div>
+              <div class="item111 item-22"></div>
+              <div class="item111 item-33"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </footer>
-          
-        <!-- Scroll [to top] -->
-        <div id="scroll-to-top" class="scroll-to-top">
-            <a href="#header" class="smooth-anchor">
-                <i class="fas fa-arrow-up"></i>
-            </a>
-        </div>        
-        
-        <!-- ==============================================
-        Google reCAPTCHA // Put your site key here
-        =============================================== -->
-        <script src="https://www.google.com/recaptcha/api.js?render=6Lf-NwEVAAAAAPo_wwOYxFW18D9_EKvwxJxeyUx7"></script>
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2>¿Necesitas Soluciones en Aplicaciones Móviles?</h2>
+            <h4>Contáctanos para desarrollar tu proyecto con los más altos estándares de calidad.</h4>
+          </div>
+          <div class="col-lg-4">
+            <div class="border-button">
+              <a href="contacto.html">Haz tu Consulta Ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-        <!-- ==============================================
-        Vendor Scripts
-        =============================================== -->
-        <script src="./js/vendor/jquery.min.js"></script>
-        <script src="./js/vendor/jquery.easing.min.js"></script>
-        <script src="./js/vendor/jquery.inview.min.js"></script>
-        <script src="./js/vendor/popper.min.js"></script>
-        <script src="./js/vendor/bootstrap.min.js"></script>
-        <script src="./js/vendor/ponyfill.min.js"></script>
-        <script src="./js/vendor/slider.min.js"></script>
-        <script src="./js/vendor/animation.min.js"></script>
-        <script src="./js/vendor/progress-radial.min.js"></script>
-        <script src="./js/vendor/bricklayer.min.js"></script>
-        <script src="./js/vendor/gallery.min.js"></script>
-        <script src="./js/vendor/shuffle.min.js"></script>
-        <script src="./js/vendor/cookie-notice.min.js"></script>
-        <script src="./js/vendor/particles.min.js"></script>
-        <script src="./js/main.js"></script>
-    </body>
+  <footer class="bg-dark text-white py-4">
+    <div class="contenedor2">
+      <canvas class="neuro"></canvas>
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Company Info -->
+          <div class="col-md-4">
+            <img src="./assets/images/logo.png" alt="Distuce Logo" class="mb-3" style="max-width: 150px;">
+            <p>DPW - Diseño y Programación Web</p>
+            <ul class="list-unstyled">
+              <li>
+                <strong>Ubicación:</strong>
+                <p>Huancayo - El Tambo, Perú</p>
+              </li>
+              <li>
+                <strong>Teléfono:</strong>
+                <p><a href="tel:+123456789" class="text-white">+51-999 999 999</a></p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="col-md-4">
+            <p class="mb-3">Síguenos</p>
+            <div>
+              <a href="#" class="text-white me-3"><i class="fab fa-tiktok"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4">
+            <p class="mb-3">Enlaces Rápidos</p>
+            <ul class="list-unstyled">
+              <li><a href="index.html" class="text-white">Inicio</a></li>              
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-light">
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0">&copy; 2024 Distuce. Todos los derechos reservados.</p>
+          <a href="privacidad.html" class="text-white">Política de Privacidad</a><br>
+          <a href="terminos.html" class="text-white">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div> <!-- Aquí cierra correctamente el div contenedor -->
+  </footer>
+
+  <!-- Aquí empiezan los shaders -->
+  <script type="x-shader/x-fragment" id="vertShader">
+    precision mediump float;
+
+    varying vec2 vUv;
+    attribute vec2 a_position;
+
+    void main() {
+        vUv = .5 * (a_position + 1.);
+        gl_Position = vec4(a_position, 0.0, 1.0);
+    }
+</script>
+
+  <script type="x-shader/x-fragment" id="fragShader">
+    precision mediump float;
+
+    varying vec2 vUv;
+    uniform float u_time;
+    uniform float u_ratio;
+    uniform vec2 u_pointer_position;
+    uniform float u_scroll_progress;
+
+    vec2 rotate(vec2 uv, float th) {
+        return mat2(cos(th), sin(th), -sin(th), cos(th)) * uv;
+    }
+
+    float neuro_shape(vec2 uv, float t, float p) {
+        vec2 sine_acc = vec2(0.);
+        vec2 res = vec2(0.);
+        float scale = 8.;
+
+        for (int j = 0; j < 15; j++) {
+            uv = rotate(uv, 1.);
+            sine_acc = rotate(sine_acc, 1.);
+            vec2 layer = uv * scale + float(j) + sine_acc - t;
+            sine_acc += sin(layer);
+            res += (.5 + .5 * cos(layer)) / scale;
+            scale *= (1.2 - .07 * p);
+        }
+        return res.x + res.y;
+    }
+
+    void main() {
+        vec2 uv = .5 * vUv;
+        uv.x *= u_ratio;
+
+        vec2 pointer = vUv - u_pointer_position;
+        pointer.x *= u_ratio;
+        float p = clamp(length(pointer), 0., 1.);
+        p = .5 * pow(1. - p, 2.);
+
+        float t = .001 * u_time;
+        vec3 color = vec3(0.);
+
+        float noise = neuro_shape(uv, t, p);
+
+        noise = 1.2 * pow(noise, 3.);
+        noise += pow(noise, 10.);
+        noise = max(.0, noise - .5);
+        noise *= (1. - length(vUv - .5));
+
+        color = normalize(vec3(.2, .5 + .4 * cos(3. * u_scroll_progress), .5 + .5 * sin(3. * u_scroll_progress)));
+
+        color = color * noise;
+
+        gl_FragColor = vec4(color, noise);
+    }
+</script>
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="assets/js/felix.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/js/red.js"></script>
+
+
+  <script>
+    function bannerSwitcher() {
+      next = $('.sec-1-input').filter(':checked').next('.sec-1-input');
+      if (next.length) next.prop('checked', true);
+      else $('.sec-1-input').first().prop('checked', true);
+    }
+
+    var bannerTimer = setInterval(bannerSwitcher, 4000);
+
+    $('nav .controls label').click(function () {
+      clearInterval(bannerTimer);
+      bannerTimer = setInterval(bannerSwitcher, 4000)
+    });
+  </script>
+
+
+</body>
+
 </html>
